@@ -307,6 +307,26 @@ export default {
          ],
         remoteConfig: [
           {
+            label: "默認",
+            options: [
+              {
+                label: "不選，由接口提供方提供",
+                value:
+                  ""
+              }
+            ]
+          },
+          {
+            label: "ACL4SSR",
+            options: [
+              {
+                label: "ACL4SSR_Online 默認版",
+                value:
+                  "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online.ini"
+              }
+            ]
+          },
+          {
             label: "universal",
             options: [
               {
