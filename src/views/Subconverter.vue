@@ -302,8 +302,13 @@ export default {
           Surge2: "surge&ver=2",
         },
         backendOptions: [
-          { value: "http://127.0.0.1:25500/sub?" }, 
-          { value: "http://127.0.0.1:25500/sub?" }
+          { label: "測試", 
+            value: "https://api.wcc.best/sub?"
+          },
+          {
+            label: "localhost:25500 本地版",
+            value: "http://127.0.0.1:25500/sub?" 
+          }
          ],
         remoteConfig: [
           {
