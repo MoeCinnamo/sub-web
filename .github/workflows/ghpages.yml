@@ -20,6 +20,7 @@ jobs:
       run: |
         yarn install
         yarn build
+        cd dist && cp index.html 404.html && cd ..
         
     - name: Deploy
       uses: crazy-max/ghaction-github-pages@v3
