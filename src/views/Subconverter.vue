@@ -33,9 +33,23 @@
                   <el-autocomplete
                     style="width: 100%"
                     v-model="form.customBackend"
+                    allow-create
+                    filterable
                     :fetch-suggestions="backendSearch"
-                    placeholder="選擇或輸入您的後端服務"
+                    placeholder="請選取"
                   >
+                    <el-option-group
+                      v-for="group in options.backendOptions"
+                      :key="group.label"
+                      :label="group.label"
+                    >
+                      <el-option
+                        v-for="item in group.options"
+                        :key="item.value"
+                        :label="item.label"
+                        :value="item.value"
+                      ></el-option>
+                    </el-option-group>
                     <!-- <el-button slot="append" @click="gotoGayhub" icon="el-icon-link">前往项目仓库</el-button> -->
                   </el-autocomplete>
                 </el-form-item>
@@ -302,7 +316,8 @@ export default {
           Surge2: "surge&ver=2",
         },
         backendOptions: [
-          { label: "測試", 
+          {
+            label: "測試", 
             value: "https://api.wcc.best/sub?"
           },
           {
