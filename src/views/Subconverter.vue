@@ -426,6 +426,13 @@ export default {
   },
   created() {
     document.title = "訂閱轉換";
+    // 站点标题萌化
+    window.onfocus = function () {
+      document.title = '歡迎回來！';
+    };
+    window.onblur = function () {
+      document.title = '快回來~頁面崩潰了';
+    };
     this.isPC = this.$getOS().isPc;
 
     // 获取 url cache
