@@ -37,7 +37,7 @@
                     placeholder="選擇或輸入您的後端地址"
                   >
                     <el-option-group
-                      v-for="item in options.backendOptions"
+                      v-for="group in options.backendOptions"
                       :key="group.label"
                       :label="group.label"
                     >
