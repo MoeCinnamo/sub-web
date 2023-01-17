@@ -37,7 +37,7 @@
                     placeholder="選擇或輸入您的後端地址"
                   >
                     <el-option
-                        v-for="item in group.options"
+                        v-for="item in group.backendOptions"
                         :key="item.value"
                         :label="item.label"
                         :value="item.value"
@@ -61,7 +61,7 @@
                       :label="group.label"
                     >
                       <el-option
-                        v-for="item in group.backendOptions"
+                        v-for="item in group.options"
                         :key="item.value"
                         :label="item.label"
                         :value="item.value"
