@@ -303,6 +303,12 @@ export default {
         },
         backendOptions: [
           { value: "https://api.wcc.best/sub?" },
+          { value: "https://sub.id9.cc/sub?" },
+          { value: "https://v.id9.cc/sub?" },
+          { value: "https://id9.cc/sub?" },
+          { value: "https://api.tsutsu.one/sub?" },
+          { value: "https://sub.xeton.dev/sub?" },
+          { value: "https://api.dler.io/sub?" },
           { value: "http://127.0.0.1:25500/sub?" }
          ],
         remoteConfig: [
