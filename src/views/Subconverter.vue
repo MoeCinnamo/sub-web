@@ -83,10 +83,10 @@
                         <el-checkbox v-model="form.emoji" label="Emoji"></el-checkbox>
                       </el-row>
                       <el-row>
-                        <el-checkbox v-model="form.scv" label="跳過證書驗證"></el-checkbox>
+                        <el-checkbox v-model="form.udp" @change="needUdp = true" label="啟用 UDP(需伺服器支援)"></el-checkbox>
                       </el-row>
                       <el-row>
-                        <el-checkbox v-model="form.udp" @change="needUdp = true" label="啟用 UDP(需伺服器支援)"></el-checkbox>
+                        <el-checkbox v-model="form.scv" label="跳過證書驗證"></el-checkbox>
                       </el-row>
                       <el-row>
                         <el-checkbox v-model="form.appendType" label="節點類型"></el-checkbox>
@@ -390,9 +390,9 @@ export default {
         nodeList: false,
         extraset: false,
         sort: false,
-        udp: false,
+        udp: true,
         tfo: false,
-        scv: true,
+        scv: false,
         fdn: false,
         appendType: false,
         insert: false, // 是否插入默认订阅的节点，对应配置项 insert_url
