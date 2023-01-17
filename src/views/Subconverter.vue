@@ -36,12 +36,6 @@
                     :fetch-suggestions="backendSearch"
                     placeholder="選擇或輸入您的後端地址"
                   >
-                    <el-option
-                        v-for="item in group.backendOptions"
-                        :key="item.value"
-                        :label="item.label"
-                        :value="item.value"
-                      ></el-option>
                     <!-- <el-button slot="append" @click="gotoGayhub" icon="el-icon-link">前往项目仓库</el-button> -->
                   </el-autocomplete>
                 </el-form-item>
@@ -308,14 +302,8 @@ export default {
           Surge2: "surge&ver=2",
         },
         backendOptions: [
-          {
-            label: "測試", 
-            value: "https://api.wcc.best/sub?"
-          },
-          {
-            label: "localhost:25500 本地版",
-            value: "http://127.0.0.1:25500/sub?" 
-          }
+          { value: "https://api.wcc.best/sub?" },
+          { value: "http://127.0.0.1:25500/sub?" }
          ],
         remoteConfig: [
           {
