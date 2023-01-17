@@ -1,3 +1,4 @@
+document.getElementsByTagName("title")[0].innerText = '訂閱轉換'; // 设置站点标题
 console.log(document.title); // 获取站点标题
 document.title = '訂閱轉換'; // 设置站点标题
 // 站点标题萌化
