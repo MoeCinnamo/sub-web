@@ -36,12 +36,12 @@
                     :fetch-suggestions="backendSearch"
                     placeholder="選擇或輸入您的後端地址"
                   >
-                    <el-option-group
-                      v-for="group in options.backendOptions"
-                      :key="group.label"
-                      :label="group.label"
-                    >
-                    </el-option-group>
+                    <el-option
+                        v-for="item in group.options"
+                        :key="item.value"
+                        :label="item.label"
+                        :value="item.value"
+                      ></el-option>
                     <!-- <el-button slot="append" @click="gotoGayhub" icon="el-icon-link">前往项目仓库</el-button> -->
                   </el-autocomplete>
                 </el-form-item>
@@ -61,7 +61,7 @@
                       :label="group.label"
                     >
                       <el-option
-                        v-for="item in group.options"
+                        v-for="item in group.backendOptions"
                         :key="item.value"
                         :label="item.label"
                         :value="item.value"
