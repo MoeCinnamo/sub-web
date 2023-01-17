@@ -29,9 +29,7 @@
                   <el-option v-for="(v, k) in options.clientTypes" :key="k" :label="k" :value="v"></el-option>
                 </el-select>
               </el-form-item>
-
-              <div v-if="advanced === '2'">
-                <el-form-item label="後端地址:">
+              <el-form-item label="後端地址:">
                   <el-autocomplete
                     style="width: 100%"
                     v-model="form.customBackend"
@@ -41,6 +39,8 @@
                     <!-- <el-button slot="append" @click="gotoGayhub" icon="el-icon-link">前往项目仓库</el-button> -->
                   </el-autocomplete>
                 </el-form-item>
+
+              <div v-if="advanced === '2'">
                 <el-form-item label="遠程配置:">
                   <el-select
                     v-model="form.remoteConfig"
@@ -183,13 +183,13 @@
                   @click="clashInstall"
                   icon="el-icon-connection"
                   :disabled="customSubUrl.length === 0"
-                >一鍵導入到Clash</el-button>
+                >一鍵導入Clash</el-button>
                 <el-button
                 style="width: 120px"
                 type="primary"
                 @click="surgeInstall"
                 icon="el-icon-connection"
-                >一键导入Surge</el-button>
+                >一鍵導入Surge</el-button>
               </el-form-item>
             </el-form>
           </el-container>
@@ -207,7 +207,7 @@
       <div slot="title">
         Remote config upload
         <el-popover trigger="hover" placement="right" style="margin-left: 10px">
-          <el-link type="primary" :href="sampleConfig" target="_blank" icon="el-icon-info">参考配置</el-link>
+          <el-link type="primary" :href="sampleConfig" target="_blank" icon="el-icon-info">參考配置</el-link>
           <i class="el-icon-question" slot="reference"></i>
         </el-popover>
       </div>
@@ -228,7 +228,7 @@
           type="primary"
           @click="confirmUploadConfig"
           :disabled="uploadConfig.length === 0"
-        >确 定</el-button>
+        >確 定</el-button>
       </div>
     </el-dialog>
 
@@ -240,7 +240,7 @@
         width="700px"
     >
       <div slot="title">
-        可以从老的订阅信息中解析信息,填入页面中去
+        可以從老的訂閱信息中解析信息,填入頁面中去
       </div>
       <el-form label-position="left">
         <el-form-item prop="uploadConfig">
@@ -259,7 +259,7 @@
             type="primary"
             @click="confirmLoadConfig"
             :disabled="loadConfig.length === 0"
-        >确 定</el-button>
+        >確 定</el-button>
       </div>
     </el-dialog>
 
@@ -301,7 +301,10 @@ export default {
           ClashR: "clashr",
           Surge2: "surge&ver=2",
         },
-        backendOptions: [{ value: "http://127.0.0.1:25500/sub?" }],
+        backendOptions: [
+          { value: "http://127.0.0.1:25500/sub?" }, 
+          { value: "http://127.0.0.1:25500/sub?" }
+         ],
         remoteConfig: [
           {
             label: "universal",
@@ -362,7 +365,7 @@ export default {
             label: "Special",
             options: [
               {
-                label: "NeteaseUnblock(仅规则，No-Urltest)",
+                label: "NeteaseUnblock(僅規則，No-Urltest)",
                 value:
                   "https://cdn.jsdelivr.net/gh/SleepyHeeead/subconverter-config@master/remote-config/special/netease.ini"
               },
@@ -450,7 +453,7 @@ export default {
     },
     clashInstall() {
       if (this.customSubUrl === "") {
-        this.$message.error("请先填写必填项，生成订阅链接");
+        this.$message.error("請先填寫必填項，生成訂閱鏈接");
         return false;
       }
 
@@ -466,7 +469,7 @@ export default {
     },
     surgeInstall() {
       if (this.customSubUrl === "") {
-        this.$message.error("请先填写必填项，生成订阅链接");
+        this.$message.error("請先填寫必填項，生成訂閱鏈接");
         return false;
       }
 
@@ -475,7 +478,7 @@ export default {
     },
     makeUrl() {
       if (this.form.sourceSubUrl === "" || this.form.clientType === "") {
-        this.$message.error("订阅链接与客户端为必填项");
+        this.$message.error("訂閱鏈接與客戶端為必填項");
         return false;
       }
 
@@ -550,11 +553,11 @@ export default {
       }
 
       this.$copyText(this.customSubUrl);
-      this.$message.success("定制订阅已复制到剪贴板");
+      this.$message.success("定制訂閱已複製到剪貼板");
     },
     makeShortUrl() {
       if (this.customSubUrl === "") {
-        this.$message.warning("请先生成订阅链接，再获取对应短链接");
+        this.$message.warning("請先生成訂閱鏈接，再獲取對應短鏈接");
         return false;
       }
 
@@ -573,13 +576,13 @@ export default {
           if (res.data.Code === 1 && res.data.ShortUrl !== "") {
             this.curtomShortSubUrl = res.data.ShortUrl;
             this.$copyText(res.data.ShortUrl);
-            this.$message.success("短链接已复制到剪贴板");
+            this.$message.success("短鏈接已複製到剪貼板");
           } else {
-            this.$message.error("短链接获取失败：" + res.data.Message);
+            this.$message.error("短鏈接獲取失敗：" + res.data.Message);
           }
         })
         .catch(() => {
-          this.$message.error("短链接获取失败");
+          this.$message.error("短鏈接獲取失敗");
         })
         .finally(() => {
           this.loading = false;
@@ -589,18 +592,18 @@ export default {
       const h = this.$createElement;
 
       this.$notify({
-        title: "隐私提示",
+        title: "隱私提示",
         type: "warning",
         message: h(
           "i",
           { style: "color: teal" },
-          "各种订阅链接（短链接服务除外）生成纯前端实现，无隐私问题。默认提供后端转换服务，隐私担忧者请自行搭建后端服务。"
+          "各種訂閱鏈接（短鏈接服務除外）生成純前端實現，無隱私問題。默認提供後端轉換服務，隱私擔憂者請自行搭建後端服務。"
         )
       });
     },
     confirmUploadConfig() {
       if (this.uploadConfig === "") {
-        this.$message.warning("远程配置不能为空");
+        this.$message.warning("遠程配置不能為空");
         return false;
       }
 
@@ -619,7 +622,7 @@ export default {
         .then(res => {
           if (res.data.code === 0 && res.data.data.url !== "") {
             this.$message.success(
-              "远程配置上传成功，配置链接已复制到剪贴板，有效期三个月望知悉"
+              "遠程配置上傳成功，配置鏈接已複製到剪貼板，有效期三個月望知悉"
             );
 
             // 自动填充至『表单-远程配置』
@@ -628,11 +631,11 @@ export default {
 
             this.dialogUploadConfigVisible = false;
           } else {
-            this.$message.error("远程配置上传失败: " + res.data.msg);
+            this.$message.error("遠程配置上傳失敗: " + res.data.msg);
           }
         })
         .catch(() => {
-          this.$message.error("远程配置上传失败");
+          this.$message.error("遠程配置上傳失敗");
         })
         .finally(() => {
           this.loading = false;
@@ -641,14 +644,14 @@ export default {
     confirmLoadConfig(){
       // 怎么解析短链接的302和301...
       if (this.loadConfig.indexOf("target")=== -1){
-        this.$message.error("请输入正确的订阅地址,暂不支持短链接!");
+        this.$message.error("請輸入正確的訂閱地址,暫不支援短鏈接!");
         return;
       }
       let url
       try {
         url = new URL(this.loadConfig)
       } catch (error) {
-        this.$message.error("请输入正确的订阅地址!");
+        this.$message.error("請輸入正確的訂閱地址!");
         return;
       }
       this.form.customBackend = url.origin + url.pathname + "?"
