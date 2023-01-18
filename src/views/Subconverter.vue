@@ -167,7 +167,7 @@
                   @click="dialogUploadConfigVisible = true"
                   icon="el-icon-upload"
                   :loading="loading"
-                >上傳配置</el-button>
+                >上載配置</el-button>
                 <el-button
                     style="width: 120px"
                     type="primary"
@@ -206,7 +206,7 @@
       width="700px"
     >
       <div slot="title">
-        Remote config upload
+        遠程配置上載
         <el-popover trigger="hover" placement="right" style="margin-left: 10px">
           <el-link type="primary" :href="sampleConfig" target="_blank" icon="el-icon-info">參考配置</el-link>
           <i class="el-icon-question" slot="reference"></i>
