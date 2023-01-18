@@ -318,66 +318,6 @@ export default {
             label: "ACL4SSR",
             options: [
               {
-                label: "ACL4SSR 本地 默認版 分組比較全",
-                value:
-                  "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR.ini"
-              },
-              {
-                label: "ACL4SSR_AdblockPlus 本地 更多去廣告",
-                value:
-                  "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_AdblockPlus.ini"
-              },
-              {
-                label: "ACL4SSR_BackCN 本地 回國",
-                value:
-                  "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_BackCN.ini"
-              },
-              {
-                label: "ACL4SSR_Mini 本地 精簡版",
-                value:
-                  "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Mini.ini"
-              },
-              {
-                label: "ACL4SSR_Mini_Fallback 本地 精簡版 帶故障轉移",
-                value:
-                  "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Mini_Fallback.ini"
-              },
-              {
-                label: "ACL4SSR_Mini_MultiMode 本地 精簡版 自動測速、故障轉移、負載均衡",
-                value:
-                  "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Mini_MultiMode.ini"
-              },
-              {
-                label: "ACL4SSR_Mini_NoAuto 本地 精簡版 不帶自動測速",
-                value:
-                  "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Mini_NoAuto.ini"
-              },
-              {
-                label: "ACL4SSR_NoApple 本地 無蘋果分流",
-                value:
-                  "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_NoApple.ini"
-              },
-              {
-                label: "ACL4SSR_NoAuto 本地 無自動測速",
-                value:
-                  "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_NoAuto.ini"
-              },
-              {
-                label: "ACL4SSR_NoAuto_NoApple 本地 無自動測速&無蘋果分流",
-                value:
-                  "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_NoAuto_NoApple.ini"
-              },
-              {
-                label: "ACL4SSR_NoAuto_NoApple_NoMicrosoft 本地 無自動測速&無蘋果分流&無微軟分流",
-                value:
-                  "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_NoAuto_NoApple_NoMicrosoft.ini"
-              },
-              {
-                label: "ACL4SSR_NoMicrosoft 本地 無微軟分流",
-                value:
-                  "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_NoMicrosoft.ini"
-              },
-              {
                 label: "ACL4SSR_Online 默認版 分組比較全",
                 value:
                   "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online.ini"
@@ -451,6 +391,66 @@ export default {
                 label: "ACL4SSR_Online_NoReject 無攔截",
                 value:
                   "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_NoReject.ini"
+              },
+              {
+                label: "ACL4SSR 本地 默認版 分組比較全",
+                value:
+                  "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR.ini"
+              },
+              {
+                label: "ACL4SSR_AdblockPlus 本地 更多去廣告",
+                value:
+                  "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_AdblockPlus.ini"
+              },
+              {
+                label: "ACL4SSR_BackCN 本地 回國",
+                value:
+                  "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_BackCN.ini"
+              },
+              {
+                label: "ACL4SSR_Mini 本地 精簡版",
+                value:
+                  "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Mini.ini"
+              },
+              {
+                label: "ACL4SSR_Mini_Fallback 本地 精簡版 帶故障轉移",
+                value:
+                  "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Mini_Fallback.ini"
+              },
+              {
+                label: "ACL4SSR_Mini_MultiMode 本地 精簡版 自動測速、故障轉移、負載均衡",
+                value:
+                  "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Mini_MultiMode.ini"
+              },
+              {
+                label: "ACL4SSR_Mini_NoAuto 本地 精簡版 不帶自動測速",
+                value:
+                  "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Mini_NoAuto.ini"
+              },
+              {
+                label: "ACL4SSR_NoApple 本地 無蘋果分流",
+                value:
+                  "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_NoApple.ini"
+              },
+              {
+                label: "ACL4SSR_NoAuto 本地 無自動測速",
+                value:
+                  "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_NoAuto.ini"
+              },
+              {
+                label: "ACL4SSR_NoAuto_NoApple 本地 無自動測速&無蘋果分流",
+                value:
+                  "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_NoAuto_NoApple.ini"
+              },
+              {
+                label: "ACL4SSR_NoAuto_NoApple_NoMicrosoft 本地 無自動測速&無蘋果分流&無微軟分流",
+                value:
+                  "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_NoAuto_NoApple_NoMicrosoft.ini"
+              },
+              {
+                label: "ACL4SSR_NoMicrosoft 本地 無微軟分流",
+                value:
+                  "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_NoMicrosoft.ini"
               },
               {
                 label: "ACL4SSR_WithChinaIp 本地 增強的中國IP段",
