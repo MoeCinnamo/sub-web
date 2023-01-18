@@ -189,6 +189,7 @@
                 type="primary"
                 @click="surgeInstall"
                 icon="el-icon-connection"
+                :disabled="customSubUrl.length === 0"
                 >一鍵導入Surge</el-button>
               </el-form-item>
             </el-form>
