@@ -313,16 +313,7 @@ export default {
           { value: "http://127.0.0.1:25500/sub?" }
          ],
         remoteConfig: [
-          {
-            label: "默認",
-            options: [
-              {
-                label: "不選，由接口提供方提供",
-                value:
-                  ""
-              }
-            ]
-          },
+          { label: "默認",  options: [  { label: "不選，由接口提供方提供", value: "" } ] },
           {
             label: "ACL4SSR",
             options: [
