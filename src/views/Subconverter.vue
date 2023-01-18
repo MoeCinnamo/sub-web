@@ -64,13 +64,13 @@
                     <el-button slot="append" @click="gotoRemoteConfig" icon="el-icon-link">配置示例</el-button>
                   </el-select>
                 </el-form-item>
-                <el-form-item label="Include:">
+                <el-form-item label="包含節點:">
                   <el-input v-model="form.includeRemarks" placeholder="節點名包含的關鍵字，支援正則" />
                 </el-form-item>
-                <el-form-item label="Exclude:">
+                <el-form-item label="排除節點:">
                   <el-input v-model="form.excludeRemarks" placeholder="節點名不包含的關鍵字，支援正則" />
                 </el-form-item>
-                <el-form-item label="FileName:">
+                <el-form-item label="文件名稱:">
                   <el-input v-model="form.filename" placeholder="返回的訂閱文件名" />
                 </el-form-item>
                 <el-form-item label-width="0px">
