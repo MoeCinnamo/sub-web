@@ -327,22 +327,47 @@ export default {
             label: "ACL4SSR",
             options: [
               {
-                label: "ACL4SSR 默認版 分組比較全",
+                label: "ACL4SSR 本地 默認版 分組比較全",
                 value:
                   "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR.ini"
               },
               {
-                label: "ACL4SSR_AdblockPlus 更多去廣告",
+                label: "ACL4SSR_AdblockPlus 本地 更多去廣告",
                 value:
                   "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_AdblockPlus.ini"
               },
               {
-                label: "ACL4SSR_BackCN 回國",
+                label: "ACL4SSR_BackCN 本地 回國",
                 value:
                   "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_BackCN.ini"
               },
               {
-                label: "ACL4SSR_WithGFW.ini GFW列表",
+                label: "ACL4SSR_Mini 本地 精簡版",
+                value:
+                  "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Mini.ini"
+              },
+              {
+                label: "ACL4SSR_Mini_Fallback 本地 精簡版+Fallback",
+                value:
+                  "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Mini_Fallback.ini"
+              },
+              {
+                label: "ACL4SSR_Mini_MultiMode 本地 精簡版 自動測速、故障轉移、負載均衡",
+                value:
+                  "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Mini_MultiMode.ini"
+              },
+              {
+                label: "ACL4SSR_Mini_NoAuto 本地 精簡版 不帶自動測速",
+                value:
+                  "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Mini_NoAuto.ini"
+              },
+              {
+                label: "ACL4SSR_NoApple 本地 無蘋果分流",
+                value:
+                  "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_NoApple.ini"
+              },
+              {
+                label: "ACL4SSR_WithGFW 本地 GFW列表",
                 value:
                   "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_WithGFW.ini"
               }
