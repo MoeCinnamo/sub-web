@@ -318,152 +318,152 @@ export default {
             label: "ACL4SSR",
             options: [
               {
-                label: "ACL4SSR_Online 默認版 分組比較全",
+                label: "ACL4SSR_Online",
                 value:
                   "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online.ini"
               },
               {
-                label: "ACL4SSR_Online_AdblockPlus 更多去廣告",
+                label: "ACL4SSR_Online_AdblockPlus",
                 value:
                   "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_AdblockPlus.ini"
               },
               {
-                label: "ACL4SSR_Online_Full 全分組 重度用戶使用",
+                label: "ACL4SSR_Online_Full",
                 value:
                   "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full.ini"
               },
               {
-                label: "ACL4SSR_Online_Full_AdblockPlus 全分組 重度用戶使用 更多去廣告",
+                label: "ACL4SSR_Online_Full_AdblockPlus",
                 value:
                   "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full_AdblockPlus.ini"
               },
               {
-                label: "ACL4SSR_Online_Full_Google 全分組 重度用戶使用 谷歌精細分流",
+                label: "ACL4SSR_Online_Full_Google",
                 value:
                   "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full_Google.ini"
               },
               {
-                label: "ACL4SSR_Online_Full_MultiMode 全分組 多模式 重度用戶使用",
+                label: "ACL4SSR_Online_Full_MultiMode",
                 value:
                   "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full_MultiMode.ini"
               },
               {
-                label: "ACL4SSR_Online_Full_Netflix 全分組 重度用戶使用 奈飛全量",
+                label: "ACL4SSR_Online_Full_Netflix",
                 value:
                   "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full_Netflix.ini"
               },
               {
-                label: "ACL4SSR_Online_Full_NoAuto 全分組 無自動測速 重度用戶使用",
+                label: "ACL4SSR_Online_Full_NoAuto",
                 value:
                   "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full_NoAuto.ini"
               },
               {
-                label: "ACL4SSR_Online_Mini 精簡版",
+                label: "ACL4SSR_Online_Mini",
                 value:
                   "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Mini.ini"
               },
               {
-                label: "ACL4SSR_Online_Mini_AdblockPlus 精簡版 更多去廣告",
+                label: "ACL4SSR_Online_Mini_AdblockPlus",
                 value:
                   "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Mini_AdblockPlus.ini"
               },
               {
-                label: "ACL4SSR_Online_Mini_Fallback 精簡版 帶故障轉移",
+                label: "ACL4SSR_Online_Mini_Fallback",
                 value:
                   "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Mini_Fallback.ini"
               },
               {
-                label: "ACL4SSR_Online_Mini_MultiCountry 精簡版 帶港美日國家",
+                label: "ACL4SSR_Online_Mini_MultiCountry",
                 value:
                   "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Mini_MultiCountry.ini"
               },
               {
-                label: "ACL4SSR_Online_Mini_MultiMode 精簡版 自動測速、故障轉移、負載均衡",
+                label: "ACL4SSR_Online_Mini_MultiMode",
                 value:
                   "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Mini_MultiMode.ini"
               },
               {
-                label: "ACL4SSR_Online_NoAuto 無自動測速",
+                label: "ACL4SSR_Online_NoAuto",
                 value:
                   "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_NoAuto.ini"
               },
               {
-                label: "ACL4SSR_Online_NoReject 無攔截",
+                label: "ACL4SSR_Online_NoReject",
                 value:
                   "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_NoReject.ini"
               },
               {
-                label: "ACL4SSR 本地 默認版 分組比較全",
+                label: "ACL4SSR",
                 value:
                   "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR.ini"
               },
               {
-                label: "ACL4SSR_AdblockPlus 本地 更多去廣告",
+                label: "ACL4SSR_AdblockPlus",
                 value:
                   "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_AdblockPlus.ini"
               },
               {
-                label: "ACL4SSR_BackCN 本地 回國",
+                label: "ACL4SSR_BackCN",
                 value:
                   "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_BackCN.ini"
               },
               {
-                label: "ACL4SSR_Mini 本地 精簡版",
+                label: "ACL4SSR_Mini",
                 value:
                   "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Mini.ini"
               },
               {
-                label: "ACL4SSR_Mini_Fallback 本地 精簡版 帶故障轉移",
+                label: "ACL4SSR_Mini_Fallback",
                 value:
                   "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Mini_Fallback.ini"
               },
               {
-                label: "ACL4SSR_Mini_MultiMode 本地 精簡版 自動測速、故障轉移、負載均衡",
+                label: "ACL4SSR_Mini_MultiMode",
                 value:
                   "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Mini_MultiMode.ini"
               },
               {
-                label: "ACL4SSR_Mini_NoAuto 本地 精簡版 不帶自動測速",
+                label: "ACL4SSR_Mini_NoAuto",
                 value:
                   "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Mini_NoAuto.ini"
               },
               {
-                label: "ACL4SSR_NoApple 本地 無蘋果分流",
+                label: "ACL4SSR_NoApple",
                 value:
                   "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_NoApple.ini"
               },
               {
-                label: "ACL4SSR_NoAuto 本地 無自動測速",
+                label: "ACL4SSR_NoAuto",
                 value:
                   "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_NoAuto.ini"
               },
               {
-                label: "ACL4SSR_NoAuto_NoApple 本地 無自動測速&無蘋果分流",
+                label: "ACL4SSR_NoAuto_NoApple",
                 value:
                   "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_NoAuto_NoApple.ini"
               },
               {
-                label: "ACL4SSR_NoAuto_NoApple_NoMicrosoft 本地 無自動測速&無蘋果分流&無微軟分流",
+                label: "ACL4SSR_NoAuto_NoApple_NoMicrosoft",
                 value:
                   "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_NoAuto_NoApple_NoMicrosoft.ini"
               },
               {
-                label: "ACL4SSR_NoMicrosoft 本地 無微軟分流",
+                label: "ACL4SSR_NoMicrosoft",
                 value:
                   "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_NoMicrosoft.ini"
               },
               {
-                label: "ACL4SSR_WithChinaIp 本地 增強的中國IP段",
+                label: "ACL4SSR_WithChinaIp",
                 value:
                   "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_WithChinaIp.ini"
               },
               {
-                label: "ACL4SSR_WithChinaIp_WithGFW 本地 增強的中國IP段 GFW列表",
+                label: "ACL4SSR_WithChinaIp_WithGFW",
                 value:
                   "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_WithChinaIp_WithGFW.ini"
               },
               {
-                label: "ACL4SSR_WithGFW 本地 GFW列表",
+                label: "ACL4SSR_WithGFW",
                 value:
                   "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_WithGFW.ini"
               }
