@@ -196,7 +196,7 @@
               <el-button
                     style="width: 240px"
                     type="warning"
-                    @click="tosingbox"
+                    @click="goToSingbox"
                 >轉換成sing-box</el-button>
               </el-form-item>
             </el-form>
