@@ -191,7 +191,9 @@
                 icon="el-icon-connection"
                 :disabled="customSubUrl.length === 0"
                 >一鍵導入Surge</el-button>
-                <el-button
+              </el-form-item>
+              <el-form-item label-width="0px" style="text-align: center">
+              <el-button
                     style="width: 240px"
                     type="warning"
                     @click="tosingbox"
