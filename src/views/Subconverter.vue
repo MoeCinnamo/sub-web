@@ -196,7 +196,7 @@
               <el-button
                     style="width: 242px"
                     type="warning"
-                >轉換成sing-box</el-button>
+                ><a href="https://clash2sfa-xmdhs.koyeb.app" target="_blank">轉換成sing-box</a></el-button>
               </el-form-item>
             </el-form>
           </el-container>
