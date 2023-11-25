@@ -194,9 +194,9 @@
               </el-form-item>
               <el-form-item label-width="0px" style="text-align: center">
               <el-button
-                    style="width: 242px"
+                    style="width: 245px"
                     type="warning"
-                ><a href="https://clash2sfa-xmdhs.koyeb.app" target="_blank">轉換成sing-box</a></el-button>
+                ><a href="https://clash2sfa-xmdhs.koyeb.app" target="_blank" style="text-decoration:none;color:white;">轉換成Sing-box</a></el-button>
               </el-form-item>
             </el-form>
           </el-container>
