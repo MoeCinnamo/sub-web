@@ -193,7 +193,7 @@
                 >一鍵導入Surge</el-button>
                 <el-button
                     style="width: 240px"
-                    type="primary"
+                    type="warning"
                     @click="tosingbox"
                 >轉換成sing-box</el-button>
               </el-form-item>
