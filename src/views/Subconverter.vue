@@ -191,6 +191,11 @@
                 icon="el-icon-connection"
                 :disabled="customSubUrl.length === 0"
                 >一鍵導入Surge</el-button>
+                <el-button
+                    style="width: 240px"
+                    type="primary"
+                    @click="tosingbox"
+                >轉換成sing-box</el-button>
               </el-form-item>
             </el-form>
           </el-container>
