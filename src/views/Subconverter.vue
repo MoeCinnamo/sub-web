@@ -194,10 +194,9 @@
               </el-form-item>
               <el-form-item label-width="0px" style="text-align: center">
               <el-button
-                    style="width: 240px"
+                    style="width: 242px"
                     type="warning"
-                    @click="goToSingbox"
-                >轉換成sing-box</el-button>
+                ><a :href="https://clash2sfa-xmdhs.koyeb.app" target="_blank" style="text-decoration: none">轉換成sing-box</a></el-button>
               </el-form-item>
             </el-form>
           </el-container>
